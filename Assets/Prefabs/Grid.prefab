@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1482720621725939055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1482720621725939053}
+  - component: {fileID: 1482720621725939052}
+  m_Layer: 0
+  m_Name: Grid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1482720621725939053
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482720621725939055}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1482720621725939052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482720621725939055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b231d2ea0b1907949a7b3c7e7dc11acf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineCrystal: {fileID: 0}
+  xDim: 8
+  yDim: 8
+  level: {fileID: 0}
+  fillTIme: 0.15
+  piecePrefabs:
+  - type: 0
+    prefab: {fileID: 3622232273340814496, guid: e66fb00b11a563c49b3edbdbcb3c76a1, type: 3}
+  - type: 1
+    prefab: {fileID: 1006938239519739462, guid: 8459257b8d04eab4a8892038d6adf304, type: 3}
+  - type: 2
+    prefab: {fileID: 6934427518884776182, guid: 300281de7eeb2244b8aecfbaddb68942, type: 3}
+  - type: 3
+    prefab: {fileID: 1543403846823319238, guid: f8e5053dc0f44764e8734418dbb668a0, type: 3}
+  - type: 4
+    prefab: {fileID: 6737306673963833417, guid: 6269a3d597498b54a8e948e8151a10f1, type: 3}
+  - type: 5
+    prefab: {fileID: 1819934281588855693, guid: 4f651d70e81569b40a9b27045ee9c96d, type: 3}
+  backgroundPrefab: {fileID: 4097114258212166936, guid: 042f54fc6e5228148853c3aba548ff5b, type: 3}
+  anvilPositions: []
+  anvilPrefab: {fileID: 4097114258212166936, guid: ef86a94ed322c9647be2be009a95c139, type: 3}
+  initialPieces:
+  - type: 2
+    x: 3
+    y: 3
+  - type: 2
+    x: 3
+    y: 4
+  - type: 2
+    x: 3
+    y: 5
+  - type: 2
+    x: 4
+    y: 4
+  - type: 2
+    x: 5
+    y: 3
+  - type: 2
+    x: 5
+    y: 4
+  - type: 2
+    x: 5
+    y: 5
+  isBusy: 0
+  gridAudioSource: {fileID: 0}
+  clearPieceSFX: []
