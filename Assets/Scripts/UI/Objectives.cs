@@ -10,13 +10,34 @@ public class Objectives : MonoBehaviour
     [SerializeField] GameObject objectivePrefab;
 
     [Serializable]
-    public struct NormalPieceSprites
+    public struct PieceSprites
     {
         public Sprite sprite;
         public ColorPiece.ColorType color;
     }
-    public NormalPieceSprites[] normalPieceStructs;
+    public PieceSprites[] normalPieceStructs;
     public Dictionary<ColorPiece.ColorType, Sprite> pieceSpritesDict;
+
+    [Serializable]
+    public struct ColumnPieceSprites
+    {
+        public Sprite sprite;
+        public ColorPiece.ColorType color;
+    }
+    public PieceSprites[] columnPieceStructs;
+    public Dictionary<ColorPiece.ColorType, Sprite> columnSpritesDict;
+
+    [Serializable]
+    public struct RowPieceSprites
+    {
+        public Sprite sprite;
+        public ColorPiece.ColorType color;
+    }
+    public PieceSprites[] rowPieceStructs;
+    public Dictionary<ColorPiece.ColorType, Sprite> rowSpritesDict;
+
+    public Sprite anvilSprite;
+    public Sprite rainbowSprite;
 
     private void Awake()
     {
@@ -25,7 +46,15 @@ public class Objectives : MonoBehaviour
         switch (level.Type)
         {
             case Level.LevelType.PieceColor:
-                SetPieceColorObjectives();
+                SetPieceColorObjectives(pieceSpritesDict, normalPieceStructs);
+                break;
+
+            case Level.LevelType.COLUMN:
+                SetPieceColorObjectives(columnSpritesDict, columnPieceStructs);
+                break;
+
+            case Level.LevelType.ROW:
+                SetPieceColorObjectives(rowSpritesDict, rowPieceStructs);
                 break;
 
             default: return;
@@ -37,35 +66,25 @@ public class Objectives : MonoBehaviour
 
     }
 
-    private void SetPieceColorObjectives()
+    private void SetPieceColorObjectives(Dictionary<ColorPiece.ColorType, Sprite> spriteDict, PieceSprites[] spriteStructs)
     {
-        pieceSpritesDict = new Dictionary<ColorPiece.ColorType, Sprite>();
-        foreach (var normalPieceStruct in normalPieceStructs)
+        spriteDict = new Dictionary<ColorPiece.ColorType, Sprite>();
+        foreach (var spriteStruct in spriteStructs)
         {
-            if (!pieceSpritesDict.ContainsKey(normalPieceStruct.color))
+            if (!spriteDict.ContainsKey(spriteStruct.color))
             {
-                pieceSpritesDict.Add(normalPieceStruct.color, normalPieceStruct.sprite);
+                spriteDict.Add(spriteStruct.color, spriteStruct.sprite);
             }
         }
 
         foreach (Level.RemainingScores objective in level.remainingScores)
         {
             UIScoreByColorTypeUpdater obj = Instantiate(objectivePrefab, this.gameObject.transform).GetComponent<UIScoreByColorTypeUpdater>();
-            if (obj != null && pieceSpritesDict.ContainsKey(objective.color))
+            if (obj != null && spriteDict.ContainsKey(objective.color))
             {
-                obj.Init(objective.color, pieceSpritesDict[objective.color], Color.white);
+                obj.Init(objective.color, spriteDict[objective.color], Color.white);
             }
         }
-    }
-
-    private void SetRowObjectives()
-    {
-
-    }
-
-    private void SetColumnObjectives()
-    {
-
     }
 
     private void SetRainbowObjectives()

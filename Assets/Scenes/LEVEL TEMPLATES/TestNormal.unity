@@ -841,7 +841,7 @@ MonoBehaviour:
   - color: 4
     remainingScore: 3
   - color: 5
-    remainingScore: 3
+    remainingScore: 0
   instruments:
   - {fileID: 392554506}
   - {fileID: 684658474}
@@ -5353,6 +5353,10 @@ MonoBehaviour:
     color: 4
   - sprite: {fileID: 21300000, guid: 67e559b7f82c3b6469cb62d3c2c9103d, type: 3}
     color: 5
+  columnPieceStructs: []
+  rowPieceStructs: []
+  anvilSprite: {fileID: 0}
+  rainbowSprite: {fileID: 0}
 --- !u!114 &6346207513223033034
 MonoBehaviour:
   m_ObjectHideFlags: 0
