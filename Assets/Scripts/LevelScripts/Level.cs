@@ -40,13 +40,13 @@ public class Level : MonoBehaviour
 
     protected Dictionary<ColorPiece.ColorType, int> remainingScoresDict;
     protected Dictionary<ColorPiece.ColorType, int> remainingScoresDict0;
-    [System.Serializable]
+    [Serializable]
     public struct RemainingScores
     {
         public ColorPiece.ColorType color;
         public int remainingScore;
     };
-    [SerializeField] protected RemainingScores[] remainingScores;
+    public RemainingScores[] remainingScores;
     public GameObject[] instruments;
 
     public event Action<ColorPiece.ColorType, int> ScoreUpdate;
