@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 1393707268728149548}
   - component: {fileID: 2818842391394231423}
   - component: {fileID: 1042685294877181209}
-  - component: {fileID: 2833763912896698498}
+  - component: {fileID: 6193519281999831343}
   m_Layer: 5
   m_Name: Objective
   m_TagString: Untagged
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &2833763912896698498
+--- !u!114 &6193519281999831343
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -180,7 +180,6 @@ GameObject:
   - component: {fileID: 5152044030967542152}
   - component: {fileID: 5152044030967542154}
   - component: {fileID: 5152044030967542155}
-  - component: {fileID: 8782133599915527788}
   m_Layer: 5
   m_Name: score_text
   m_TagString: Untagged
@@ -305,17 +304,3 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &8782133599915527788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5152044030967542153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e892a4b97468ae64ba8e61f43aa5f1a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetColorType: 0
-  image: {fileID: 0}

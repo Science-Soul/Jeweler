@@ -2577,6 +2577,14 @@ MonoBehaviour:
     remainingScore: 1
   - color: 1
     remainingScore: 2
+  - color: 2
+    remainingScore: 2
+  - color: 3
+    remainingScore: 2
+  - color: 4
+    remainingScore: 2
+  - color: 5
+    remainingScore: 2
   instruments:
   - {fileID: 782221429}
   - {fileID: 1818246418}
@@ -5391,7 +5399,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectivePrefab: {fileID: 2096642999161642557, guid: 0ab3be37a2e0737468d0a22c27dc981e, type: 3}
-  normalPieceStructs: []
+  normalPieceStructs:
+  - sprite: {fileID: 0}
+    color: 0
+  - sprite: {fileID: 0}
+    color: 0
+  - sprite: {fileID: 0}
+    color: 0
+  - sprite: {fileID: 0}
+    color: 0
+  - sprite: {fileID: 0}
+    color: 0
+  - sprite: {fileID: 0}
+    color: 0
   columnPieceStructs:
   - sprite: {fileID: 21300000, guid: 64e6a38d3f77bbf4897761e789ef90f2, type: 3}
     color: 0
@@ -5405,22 +5425,35 @@ MonoBehaviour:
     color: 4
   - sprite: {fileID: 21300000, guid: 5db6a50e4c1511548967d0e75a39ddd4, type: 3}
     color: 5
-  rowPieceStructs: []
+  rowPieceStructs:
+  - sprite: {fileID: 0}
+    color: 0
+  - sprite: {fileID: 0}
+    color: 0
+  - sprite: {fileID: 0}
+    color: 0
+  - sprite: {fileID: 0}
+    color: 0
+  - sprite: {fileID: 0}
+    color: 0
+  - sprite: {fileID: 0}
+    color: 0
   anvil1ColorStructs:
   - color: {r: 1, g: 0, b: 0, a: 1}
     colorType: 0
   - color: {r: 1, g: 0.9342736, b: 0, a: 1}
     colorType: 1
-  - color: {r: 0, g: 0, b: 0, a: 0}
-    colorType: 0
-  - color: {r: 0, g: 0, b: 0, a: 0}
-    colorType: 0
-  - color: {r: 0, g: 0, b: 0, a: 0}
-    colorType: 0
-  - color: {r: 0, g: 0, b: 0, a: 0}
-    colorType: 0
-  anvilSprite: {fileID: 21300000, guid: 1fc326f428958524b80b4e6a8625e160, type: 3}
-  rainbowSprite: {fileID: 0}
+  - color: {r: 0.075834274, g: 1, b: 0, a: 1}
+    colorType: 2
+  - color: {r: 1, g: 0, b: 0.9644861, a: 1}
+    colorType: 3
+  - color: {r: 0, g: 0.020439148, b: 1, a: 1}
+    colorType: 4
+  - color: {r: 0, g: 1, b: 1, a: 1}
+    colorType: 5
+  anvil1Sprite: {fileID: 21300000, guid: 1fc326f428958524b80b4e6a8625e160, type: 3}
+  anvil2Sprite: {fileID: 0}
+  rainbowSprite: {fileID: 21300000, guid: 99cc1643326f57348a0e9da1d0de3573, type: 3}
 --- !u!1 &1831579534
 GameObject:
   m_ObjectHideFlags: 0

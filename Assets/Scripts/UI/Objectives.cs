@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Objectives : MonoBehaviour
 {
@@ -46,7 +48,8 @@ public class Objectives : MonoBehaviour
     public AnvilColors[] anvil1ColorStructs;
     public Dictionary<ColorPiece.ColorType, Color> colorDict;
 
-    public Sprite anvilSprite;
+    public Sprite anvil1Sprite;
+    public Sprite anvil2Sprite;
     public Sprite rainbowSprite;
 
     private void Awake()
@@ -69,6 +72,13 @@ public class Objectives : MonoBehaviour
 
             case Level.LevelType.ANVIL1:
                 SetAnvil1Objectives(colorDict, anvil1ColorStructs);
+                break;
+            case Level.LevelType.ANVIL2:
+                SetAnvil2Objectives(colorDict, anvil1ColorStructs);
+                break;
+
+            case Level.LevelType.RAINBOW:
+                SetRainbowObjectives();
                 break;
 
             default: return;
@@ -103,7 +113,8 @@ public class Objectives : MonoBehaviour
 
     private void SetRainbowObjectives()
     {
-
+        UIScoreByColorTypeUpdater obj = Instantiate(objectivePrefab, this.gameObject.transform).GetComponent<UIScoreByColorTypeUpdater>();
+        obj.Init(ColorPiece.ColorType.ANY, rainbowSprite, Color.white);
     }
 
     private void SetAnvil1Objectives(Dictionary<ColorPiece.ColorType, Color> colorDict, AnvilColors[] colorStructs)
@@ -122,14 +133,33 @@ public class Objectives : MonoBehaviour
             UIScoreByColorTypeUpdater obj = Instantiate(objectivePrefab, this.gameObject.transform).GetComponent<UIScoreByColorTypeUpdater>();
             if (obj != null && colorDict.ContainsKey(objective.color))
             {
-                obj.Init(objective.color, anvilSprite, colorDict[objective.color]);
+                obj.Init(objective.color, anvil1Sprite, colorDict[objective.color]);
             }
         }
     }
 
-    private void SetAnvil2Objectives()
+    private void SetAnvil2Objectives(Dictionary<ColorPiece.ColorType, Color> colorDict, AnvilColors[] colorStructs)
     {
+        SetAnvil1Objectives(colorDict, colorStructs);
 
+        foreach (UIScoreByColorTypeUpdater obj in gameObject.GetComponentsInChildren<UIScoreByColorTypeUpdater>()) {
+            CreateEmptyChildWithImage(obj.gameObject.transform);
+        }
+
+        void CreateEmptyChildWithImage(Transform parent)
+        {
+            GameObject empty = new GameObject("anvil2Image");
+            empty.transform.SetParent(parent, false);
+            Image newImageComponent = empty.AddComponent<Image>();
+            newImageComponent.sprite = anvil2Sprite;
+            newImageComponent.color = Color.yellow;
+            RectTransform rectTransform = empty.GetComponent<RectTransform>();
+            rectTransform.anchorMin = Vector2.up;
+            rectTransform.anchorMax = Vector2.up;
+            rectTransform.localPosition = new Vector2(-88, 0);
+            rectTransform.sizeDelta = new Vector2(100, 100);
+
+        }
     }
 
 
