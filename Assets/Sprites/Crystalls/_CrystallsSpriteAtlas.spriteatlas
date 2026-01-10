@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: _CrystallsSpriteAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 203640258c01f2d489bddafb555b2f07, type: 3}
+    - {fileID: 2800000, guid: 1fc9e9f54bbd01348ab27fa15320bbd8, type: 3}
+    - {fileID: 2800000, guid: 36045a8de41401f4cbe6f667ddbe782f, type: 3}
+    - {fileID: 2800000, guid: cde57affefd330446913cd5a903f7516, type: 3}
+    - {fileID: 2800000, guid: 69129328faaf0a64ebc165508a5b98c6, type: 3}
+    - {fileID: 2800000, guid: 63949a0182df6f643b2d56b8b2538230, type: 3}
+    - {fileID: 2800000, guid: d14b478a80c694b498f0d7cb799c5d60, type: 3}
+    - {fileID: 2800000, guid: 92d48d1a9bb69df4ab9abfb0d90ae517, type: 3}
+    - {fileID: 2800000, guid: 2fdd78a36d73f7b4cb5aeeddb155773c, type: 3}
+    - {fileID: 2800000, guid: 67e559b7f82c3b6469cb62d3c2c9103d, type: 3}
+    - {fileID: 21300000, guid: 67e559b7f82c3b6469cb62d3c2c9103d, type: 3}
+    - {fileID: 2800000, guid: 5db6a50e4c1511548967d0e75a39ddd4, type: 3}
+    - {fileID: 2800000, guid: 8b986ce3776ddd04a9b57597f45e6611, type: 3}
+    - {fileID: 2800000, guid: e66a68a2acd8b9345882322047aaf137, type: 3}
+    - {fileID: 2800000, guid: e8568c9c9e2241043aeab950e5a95a4d, type: 3}
+    - {fileID: 2800000, guid: 133bbab00eee5a04192504df903f6066, type: 3}
+    - {fileID: 2800000, guid: 55bac74fabcd9924c8d599061baa0fac, type: 3}
+    - {fileID: 2800000, guid: d0b2d72c71acd654fb1dda84e0d3c1ce, type: 3}
+    - {fileID: 2800000, guid: 9468fa59fa155424a9a400303bc22b76, type: 3}
+    - {fileID: 2800000, guid: 4de9d0fcb02b03b4e982cd65a2bfeb08, type: 3}
+    - {fileID: 2800000, guid: 0f62e4120423cfb4aabe8e98937c01df, type: 3}
+    - {fileID: 2800000, guid: c2f99950ea9c8554cab3b595725b06f7, type: 3}
+    - {fileID: 2800000, guid: 5ef914a4423103549b4596e8c84f1acd, type: 3}
+    - {fileID: 2800000, guid: 59d939c130dce134989a08f8166abee4, type: 3}
+    - {fileID: 2800000, guid: 1c2d4bf7df61fb4458c4aa460d5906de, type: 3}
+    - {fileID: 2800000, guid: 99cc1643326f57348a0e9da1d0de3573, type: 3}
+    - {fileID: 2800000, guid: 124a035dc20e0c74f9da34e190c7cb9e, type: 3}
+    - {fileID: 2800000, guid: 64e6a38d3f77bbf4897761e789ef90f2, type: 3}
+    - {fileID: 2800000, guid: 836505c496c872e4d9f071c537090811, type: 3}
+    - {fileID: 2800000, guid: b0e4b895dcc3aa3468ab7c6d8b56a43c, type: 3}
+    - {fileID: 2800000, guid: efa72f016f152db499ebff870b272a9f, type: 3}
+    - {fileID: 2800000, guid: b53fea4f53e5ebe469adb9c342678035, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: c2f99950ea9c8554cab3b595725b06f7, type: 3}
+  - {fileID: 21300000, guid: 133bbab00eee5a04192504df903f6066, type: 3}
+  - {fileID: 21300000, guid: 63949a0182df6f643b2d56b8b2538230, type: 3}
+  - {fileID: 21300000, guid: efa72f016f152db499ebff870b272a9f, type: 3}
+  - {fileID: 21300000, guid: 59d939c130dce134989a08f8166abee4, type: 3}
+  - {fileID: 21300000, guid: 0f62e4120423cfb4aabe8e98937c01df, type: 3}
+  - {fileID: 21300000, guid: e66a68a2acd8b9345882322047aaf137, type: 3}
+  - {fileID: 21300000, guid: 99cc1643326f57348a0e9da1d0de3573, type: 3}
+  - {fileID: 21300000, guid: 2fdd78a36d73f7b4cb5aeeddb155773c, type: 3}
+  - {fileID: 21300000, guid: 8b986ce3776ddd04a9b57597f45e6611, type: 3}
+  - {fileID: 21300000, guid: 5ef914a4423103549b4596e8c84f1acd, type: 3}
+  - {fileID: 21300000, guid: 836505c496c872e4d9f071c537090811, type: 3}
+  - {fileID: 21300000, guid: 203640258c01f2d489bddafb555b2f07, type: 3}
+  - {fileID: 21300000, guid: b0e4b895dcc3aa3468ab7c6d8b56a43c, type: 3}
+  - {fileID: 21300000, guid: 1fc9e9f54bbd01348ab27fa15320bbd8, type: 3}
+  - {fileID: 21300000, guid: 67e559b7f82c3b6469cb62d3c2c9103d, type: 3}
+  - {fileID: 21300000, guid: 1c2d4bf7df61fb4458c4aa460d5906de, type: 3}
+  - {fileID: 21300000, guid: 69129328faaf0a64ebc165508a5b98c6, type: 3}
+  - {fileID: 21300000, guid: 9468fa59fa155424a9a400303bc22b76, type: 3}
+  - {fileID: 21300000, guid: 92d48d1a9bb69df4ab9abfb0d90ae517, type: 3}
+  - {fileID: 21300000, guid: d14b478a80c694b498f0d7cb799c5d60, type: 3}
+  - {fileID: 21300000, guid: d0b2d72c71acd654fb1dda84e0d3c1ce, type: 3}
+  - {fileID: 21300000, guid: e8568c9c9e2241043aeab950e5a95a4d, type: 3}
+  - {fileID: 21300000, guid: 4de9d0fcb02b03b4e982cd65a2bfeb08, type: 3}
+  - {fileID: 21300000, guid: 124a035dc20e0c74f9da34e190c7cb9e, type: 3}
+  - {fileID: 21300000, guid: 64e6a38d3f77bbf4897761e789ef90f2, type: 3}
+  - {fileID: 21300000, guid: 36045a8de41401f4cbe6f667ddbe782f, type: 3}
+  - {fileID: 21300000, guid: 5db6a50e4c1511548967d0e75a39ddd4, type: 3}
+  - {fileID: 21300000, guid: 55bac74fabcd9924c8d599061baa0fac, type: 3}
+  - {fileID: 21300000, guid: b53fea4f53e5ebe469adb9c342678035, type: 3}
+  - {fileID: 21300000, guid: cde57affefd330446913cd5a903f7516, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Purple_columnold
+  - Green_row2
+  - Blue_column32old
+  - Yellow_column5
+  - Purple_row4_correct
+  - Purple_column_correct
+  - Green_bright23
+  - Rainbow_bright59
+  - Blue_row24old
+  - Cyan_row
+  - Purple_row4
+  - Red_row2
+  - Blue_bright2
+  - Yellow_bright2
+  - Blue_bright2_correct
+  - Cyan6
+  - Purple_row4old
+  - Blue_column32_correct
+  - Purple_bright2old
+  - Blue_row24_correct
+  - Blue_row24
+  - Purple_bright2_correct
+  - Green_column
+  - Purple_column
+  - Red_bright3
+  - Red_column32
+  - Blue_bright2old
+  - Cyan_column2
+  - Purple_bright2
+  - Yellow_row22
+  - Blue_column32
+  m_RenderDataMap: {}
+  m_Tag: _CrystallsSpriteAtlas
+  m_IsVariant: 0

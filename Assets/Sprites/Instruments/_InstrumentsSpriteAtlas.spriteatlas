@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: _InstrumentsSpriteAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 350ff2f0229664b48aae0db61e1b3602, type: 3}
+    - {fileID: 2800000, guid: c17aacea3ea764c4aa1fafadb7380ce8, type: 3}
+    - {fileID: 2800000, guid: b567f648aee45ce429efdd8a984e9c12, type: 3}
+    - {fileID: 2800000, guid: b9b37289327c2bb40933fd0458fdb128, type: 3}
+    - {fileID: 2800000, guid: 8141c939405460e43aad92f8dc7da3e7, type: 3}
+    - {fileID: 2800000, guid: a3660b9942fb288409c08949866e6e78, type: 3}
+    - {fileID: 2800000, guid: b809593a08a88324a9a8228f29daa6d8, type: 3}
+    - {fileID: 2800000, guid: ab9a9fdcb56aae946921a9a250784532, type: 3}
+    - {fileID: 2800000, guid: a0c8f3bcc9ca45f4bacf79db487bd0d1, type: 3}
+    - {fileID: 2800000, guid: 35748e191b5a12e4c9c4ff43f7404359, type: 3}
+    - {fileID: 2800000, guid: b8a0d948984123a469decd710368bdc5, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 350ff2f0229664b48aae0db61e1b3602, type: 3}
+  - {fileID: 21300000, guid: b567f648aee45ce429efdd8a984e9c12, type: 3}
+  - {fileID: 21300000, guid: b8a0d948984123a469decd710368bdc5, type: 3}
+  - {fileID: 21300000, guid: 35748e191b5a12e4c9c4ff43f7404359, type: 3}
+  - {fileID: 21300000, guid: 8141c939405460e43aad92f8dc7da3e7, type: 3}
+  - {fileID: 21300000, guid: b9b37289327c2bb40933fd0458fdb128, type: 3}
+  - {fileID: 21300000, guid: a3660b9942fb288409c08949866e6e78, type: 3}
+  - {fileID: 21300000, guid: b809593a08a88324a9a8228f29daa6d8, type: 3}
+  - {fileID: 21300000, guid: c17aacea3ea764c4aa1fafadb7380ce8, type: 3}
+  - {fileID: 21300000, guid: a0c8f3bcc9ca45f4bacf79db487bd0d1, type: 3}
+  - {fileID: 21300000, guid: ab9a9fdcb56aae946921a9a250784532, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - BakerFrame
+  - SmelterFrame
+  - SolderingIronTip
+  - SmelterTip
+  - InlayerStand
+  - InlayerRainbowStand
+  - SmelterStand
+  - SolderingIronStand
+  - InlayerFrame
+  - InlayerTip
+  - Baker256
+  m_RenderDataMap: {}
+  m_Tag: _InstrumentsSpriteAtlas
+  m_IsVariant: 0
