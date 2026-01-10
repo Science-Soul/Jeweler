@@ -77,6 +77,10 @@ public class Objectives : MonoBehaviour
                 SetAnvil2Objectives(colorDict, anvil1ColorStructs);
                 break;
 
+            case Level.LevelType.FLASH:
+                SetFlashObjectives(colorDict, anvil1ColorStructs, pieceSpritesDict, normalPieceStructs);
+                break;
+
             case Level.LevelType.RAINBOW:
                 SetRainbowObjectives();
                 break;
@@ -158,10 +162,41 @@ public class Objectives : MonoBehaviour
             rectTransform.anchorMax = Vector2.up;
             rectTransform.localPosition = new Vector2(-88, 0);
             rectTransform.sizeDelta = new Vector2(100, 100);
-
         }
     }
 
+    private void SetFlashObjectives(Dictionary<ColorPiece.ColorType, Color> colorDict, AnvilColors[] colorStructs, Dictionary<ColorPiece.ColorType, Sprite> spriteDict, PieceSprites[] spriteStructs)
+    {
+        spriteDict = new Dictionary<ColorPiece.ColorType, Sprite>();
+        foreach (var spriteStruct in spriteStructs)
+        {
+            if (!spriteDict.ContainsKey(spriteStruct.color))
+            {
+                spriteDict.Add(spriteStruct.color, spriteStruct.sprite);
+            }
+        }
+
+        SetAnvil1Objectives(colorDict, colorStructs);
+
+        foreach (UIScoreByColorTypeUpdater obj in gameObject.GetComponentsInChildren<UIScoreByColorTypeUpdater>())
+        {
+            obj.GetComponentInChildren<Image>().rectTransform.localScale = Vector2.one;
+            CreateEmptyChildWithImage(obj.gameObject.transform, obj.targetColorType);
+        }
 
 
+        void CreateEmptyChildWithImage(Transform parent, ColorPiece.ColorType colorType)
+        {
+            GameObject empty = new GameObject("pieceImage");
+            empty.transform.SetParent(parent, false);
+            Image newImageComponent = empty.AddComponent<Image>();
+            newImageComponent.sprite = spriteDict[colorType];
+            newImageComponent.color = Color.white;
+            RectTransform rectTransform = empty.GetComponent<RectTransform>();
+            rectTransform.anchorMin = Vector2.up;
+            rectTransform.anchorMax = Vector2.up;
+            rectTransform.localPosition = new Vector2(-88, 0);
+            rectTransform.sizeDelta = new Vector2(100, 100);
+        }
+    }
 }

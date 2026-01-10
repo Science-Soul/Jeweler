@@ -18,6 +18,7 @@ public class Level : MonoBehaviour
         RAINBOW,
         ANVIL1,
         ANVIL2,
+        FLASH
     }
 
     public Grid grid;

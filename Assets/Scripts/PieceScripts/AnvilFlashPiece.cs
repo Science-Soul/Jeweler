@@ -30,7 +30,7 @@ public class AnvilFlashPiece : AnvilPiece
             spriteRend.sprite = anvilActivatedSprite;
             spriteRend.DOColor(activeAnvilColor, 0.5f).SetEase(Ease.InOutQuad);
             isActivated = true;
-            if (GridRef.level.Type == Level.LevelType.ANVIL1)
+            if (GridRef.level.Type == Level.LevelType.FLASH)
             {
                 GridRef.level.OnAnvilScoreAdd(gameObject.GetComponent<AnvilPiece>());
             }
@@ -45,7 +45,7 @@ public class AnvilFlashPiece : AnvilPiece
             spriteRend.sprite = anvilSprite;
             spriteRend.DOColor(anvilSpriteDict[anvilColor], 0.5f).SetEase(Ease.InOutQuad);
             isActivated = false;
-            if (GridRef.level.Type == Level.LevelType.ANVIL1)
+            if (GridRef.level.Type == Level.LevelType.FLASH)
             {
                 GridRef.level.OnAnvilScoreSubtract(gameObject.GetComponent<AnvilPiece>());
             }
