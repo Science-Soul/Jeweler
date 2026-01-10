@@ -1654,16 +1654,12 @@ MonoBehaviour:
   type: 4
   remainingScores:
   - color: 0
-    remainingScore: 1
-  - color: 1
     remainingScore: 2
-  - color: 2
+  - color: 1
     remainingScore: 2
   - color: 3
     remainingScore: 2
   - color: 4
-    remainingScore: 2
-  - color: 5
     remainingScore: 2
   instruments:
   - {fileID: 782221429}
@@ -2776,7 +2772,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
       propertyPath: anvilPositions.Array.size
-      value: 3
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
       propertyPath: clearPieceSFX.Array.data[0]
@@ -2804,27 +2800,27 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 227dd9f9ea4b052469328e2dcc0af8d2, type: 3}
     - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
       propertyPath: anvilPositions.Array.data[0].x
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
       propertyPath: anvilPositions.Array.data[0].y
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
       propertyPath: anvilPositions.Array.data[1].x
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
       propertyPath: anvilPositions.Array.data[1].y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
       propertyPath: anvilPositions.Array.data[2].x
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
       propertyPath: anvilPositions.Array.data[2].y
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
       propertyPath: anvilPositions.Array.data[3].x
@@ -2832,11 +2828,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
       propertyPath: anvilPositions.Array.data[3].y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
+      propertyPath: anvilPositions.Array.data[4].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
+      propertyPath: anvilPositions.Array.data[4].y
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
+      propertyPath: anvilPositions.Array.data[5].x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
+      propertyPath: anvilPositions.Array.data[5].y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
+      propertyPath: anvilPositions.Array.data[6].x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
+      propertyPath: anvilPositions.Array.data[6].y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
+      propertyPath: anvilPositions.Array.data[7].x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
+      propertyPath: anvilPositions.Array.data[7].y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
       propertyPath: anvilPositions.Array.data[1].anvilColor
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
       propertyPath: anvilPositions.Array.data[2].anvilColor
@@ -2845,6 +2873,22 @@ PrefabInstance:
     - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
       propertyPath: anvilPositions.Array.data[3].anvilColor
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
+      propertyPath: anvilPositions.Array.data[4].anvilColor
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
+      propertyPath: anvilPositions.Array.data[5].anvilColor
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
+      propertyPath: anvilPositions.Array.data[6].anvilColor
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
+      propertyPath: anvilPositions.Array.data[7].anvilColor
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1482720621725939053, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
       propertyPath: m_RootOrder
@@ -3023,7 +3067,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6544976210944786199, guid: 22e489e3ec1112142b346e64a1deb69d, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6544976210944786199, guid: 22e489e3ec1112142b346e64a1deb69d, type: 3}
       propertyPath: m_AnchorMax.x

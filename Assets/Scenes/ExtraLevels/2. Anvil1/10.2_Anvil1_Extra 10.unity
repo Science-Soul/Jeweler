@@ -1656,15 +1656,11 @@ MonoBehaviour:
   - color: 0
     remainingScore: 1
   - color: 1
-    remainingScore: 2
-  - color: 2
-    remainingScore: 2
+    remainingScore: 1
   - color: 3
-    remainingScore: 2
-  - color: 4
-    remainingScore: 2
+    remainingScore: 1
   - color: 5
-    remainingScore: 2
+    remainingScore: 1
   instruments:
   - {fileID: 782221429}
   - {fileID: 1818246418}
@@ -2776,7 +2772,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
       propertyPath: anvilPositions.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
       propertyPath: clearPieceSFX.Array.data[0]
@@ -2812,23 +2808,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
       propertyPath: anvilPositions.Array.data[1].x
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
       propertyPath: anvilPositions.Array.data[1].y
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
       propertyPath: anvilPositions.Array.data[2].x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
-      propertyPath: anvilPositions.Array.data[2].y
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
+      propertyPath: anvilPositions.Array.data[2].y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
       propertyPath: anvilPositions.Array.data[3].x
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
       propertyPath: anvilPositions.Array.data[3].y
@@ -2840,11 +2836,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
       propertyPath: anvilPositions.Array.data[2].anvilColor
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1482720621725939052, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
       propertyPath: anvilPositions.Array.data[3].anvilColor
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1482720621725939053, guid: 9fad241da4b2459418b2fe9367bcc57a, type: 3}
       propertyPath: m_RootOrder
@@ -3023,7 +3019,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6544976210944786199, guid: 22e489e3ec1112142b346e64a1deb69d, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6544976210944786199, guid: 22e489e3ec1112142b346e64a1deb69d, type: 3}
       propertyPath: m_AnchorMax.x
