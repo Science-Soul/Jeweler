@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class Objectives : MonoBehaviour
@@ -36,6 +37,15 @@ public class Objectives : MonoBehaviour
     public PieceSprites[] rowPieceStructs;
     public Dictionary<ColorPiece.ColorType, Sprite> rowSpritesDict;
 
+    [Serializable]
+    public struct AnvilColors
+    {
+        public Color color;
+        public ColorPiece.ColorType colorType;
+    }
+    public AnvilColors[] anvil1ColorStructs;
+    public Dictionary<ColorPiece.ColorType, Color> colorDict;
+
     public Sprite anvilSprite;
     public Sprite rainbowSprite;
 
@@ -55,6 +65,10 @@ public class Objectives : MonoBehaviour
 
             case Level.LevelType.ROW:
                 SetPieceColorObjectives(rowSpritesDict, rowPieceStructs);
+                break;
+
+            case Level.LevelType.ANVIL1:
+                SetAnvil1Objectives(colorDict, anvil1ColorStructs);
                 break;
 
             default: return;
@@ -92,9 +106,25 @@ public class Objectives : MonoBehaviour
 
     }
 
-    private void SetAnvil1Objectives()
+    private void SetAnvil1Objectives(Dictionary<ColorPiece.ColorType, Color> colorDict, AnvilColors[] colorStructs)
     {
+        colorDict = new Dictionary<ColorPiece.ColorType, Color>();
+        foreach (var colorStruct in colorStructs)
+        {
+            if (!colorDict.ContainsKey(colorStruct.colorType))
+            {
+                colorDict.Add(colorStruct.colorType, colorStruct.color);
+            }
+        }
 
+        foreach (Level.RemainingScores objective in level.remainingScores)
+        {
+            UIScoreByColorTypeUpdater obj = Instantiate(objectivePrefab, this.gameObject.transform).GetComponent<UIScoreByColorTypeUpdater>();
+            if (obj != null && colorDict.ContainsKey(objective.color))
+            {
+                obj.Init(objective.color, anvilSprite, colorDict[objective.color]);
+            }
+        }
     }
 
     private void SetAnvil2Objectives()
