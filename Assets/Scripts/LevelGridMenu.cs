@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
+using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -18,7 +19,7 @@ public class LevelGridMenu : MonoBehaviour
 
     private void GenerateButtons()
     {
-        for (int i = 0; i < SceneManager.sceneCountInBuildSettings - 1; i++)
+        for (int i = 0; i < SceneUtility.GetBuildIndexByScenePath("Assets/Scenes/ExtraLevels/_ORDERED/1.1_StartExtraLevels.unity") - 1; i++)
         {
             Button newButton = Instantiate(buttonPrefab);
             newButton.transform.SetParent(gridParent, false);
