@@ -1754,14 +1754,12 @@ MonoBehaviour:
   hud: {fileID: 5135346660645137617}
   type: 2
   remainingScores:
-  - color: 1
-    remainingScore: 8
-  - color: 0
-    remainingScore: 6
-  - color: 2
+  - color: 5
     remainingScore: 3
-  - color: 4
-    remainingScore: 5
+  - color: 3
+    remainingScore: 3
+  - color: 0
+    remainingScore: 3
   instruments:
   - {fileID: 782221429}
   - {fileID: 1818246418}
