@@ -87,6 +87,7 @@ MonoBehaviour:
   - type: 2
     x: 5
     y: 5
+  gameOver: 0
   isBusy: 0
   gridAudioSource: {fileID: 0}
   clearPieceSFX: []

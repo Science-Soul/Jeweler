@@ -1670,7 +1670,6 @@ MonoBehaviour:
   - {fileID: 1818246418}
   - {fileID: 409580537}
   - {fileID: 940282238}
-  - {fileID: 8869960701302272649}
 --- !u!1 &940282238 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7682404599642934586, guid: bc9399fe315b97342be9cbb23da47611, type: 3}
@@ -3209,6 +3208,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RainbowInlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 6615255958905866562, guid: af9c959e68c191e40a1daec47ab455e5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6615255958905866564, guid: af9c959e68c191e40a1daec47ab455e5, type: 3}
       propertyPath: stand
       value: 
@@ -4318,11 +4321,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4408089281149862061}
   m_CullTransparentMesh: 1
---- !u!1 &8869960701302272649 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6615255958905866562, guid: af9c959e68c191e40a1daec47ab455e5, type: 3}
-  m_PrefabInstance: {fileID: 2366204538044890059}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8869960701302272650 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6615255958905866561, guid: af9c959e68c191e40a1daec47ab455e5, type: 3}

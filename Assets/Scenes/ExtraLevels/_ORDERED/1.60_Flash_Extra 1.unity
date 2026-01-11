@@ -970,7 +970,6 @@ MonoBehaviour:
   - {fileID: 684658474}
   - {fileID: 1716362522}
   - {fileID: 110301152}
-  - {fileID: 1765037888}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1263,7 +1262,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6615255958905866562, guid: af9c959e68c191e40a1daec47ab455e5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6615255958905866564, guid: af9c959e68c191e40a1daec47ab455e5, type: 3}
       propertyPath: stand
@@ -2993,11 +2992,6 @@ GameObject:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1272113989, guid: f3c16004afc81bb4eb7400867a172e65, type: 3}
   m_PrefabInstance: {fileID: 56630972}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1765037888 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6615255958905866562, guid: af9c959e68c191e40a1daec47ab455e5, type: 3}
-  m_PrefabInstance: {fileID: 522881193}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1825005516 stripped
 MonoBehaviour:

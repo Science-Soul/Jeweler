@@ -7,7 +7,7 @@ public class LevelHints : MonoBehaviour
 {
     [SerializeField] GameObject tipsCanvas;
     [SerializeField] GameOver gameOverMenu;
-    [SerializeField] Level level;
+    //[SerializeField] Level level;
 
     // Start is called before the first frame update
     void Start()

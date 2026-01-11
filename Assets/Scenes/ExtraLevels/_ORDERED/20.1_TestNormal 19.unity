@@ -793,17 +793,17 @@ MonoBehaviour:
   type: 0
   remainingScores:
   - color: 5
-    remainingScore: 50
+    remainingScore: 75
   - color: 2
-    remainingScore: 40
+    remainingScore: 60
   - color: 0
-    remainingScore: 30
+    remainingScore: 50
   - color: 1
-    remainingScore: 40
+    remainingScore: 55
   - color: 4
-    remainingScore: 25
+    remainingScore: 35
   - color: 3
-    remainingScore: 15
+    remainingScore: 25
   instruments:
   - {fileID: 392554506}
   - {fileID: 684658474}

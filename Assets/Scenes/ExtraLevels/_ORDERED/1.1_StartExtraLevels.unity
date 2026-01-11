@@ -411,6 +411,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Smelter
       objectReference: {fileID: 0}
+    - target: {fileID: 102324449337787961, guid: f3c16004afc81bb4eb7400867a172e65, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 102324449337787962, guid: f3c16004afc81bb4eb7400867a172e65, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -499,11 +503,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2889074974241896269, guid: 11f4aa7cac7d2f049926df5c8e8d13c2, type: 3}
   m_PrefabInstance: {fileID: 524083272}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &110301152 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7682404599642934586, guid: bc9399fe315b97342be9cbb23da47611, type: 3}
-  m_PrefabInstance: {fileID: 1209025948}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &110301153 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7682404599642934585, guid: bc9399fe315b97342be9cbb23da47611, type: 3}
@@ -547,6 +546,10 @@ PrefabInstance:
     - target: {fileID: 3122825608144848116, guid: a2cd037cf4546ce4ba2dcd76f25fb265, type: 3}
       propertyPath: m_Name
       value: Inlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122825608144848116, guid: a2cd037cf4546ce4ba2dcd76f25fb265, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3122825608144848119, guid: a2cd037cf4546ce4ba2dcd76f25fb265, type: 3}
       propertyPath: m_RootOrder
@@ -594,11 +597,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2cd037cf4546ce4ba2dcd76f25fb265, type: 3}
---- !u!1 &246860964 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6615255958905866562, guid: af9c959e68c191e40a1daec47ab455e5, type: 3}
-  m_PrefabInstance: {fileID: 522881193}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &246860965 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6615255958905866561, guid: af9c959e68c191e40a1daec47ab455e5, type: 3}
@@ -732,11 +730,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &392554506 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 102324449337787961, guid: f3c16004afc81bb4eb7400867a172e65, type: 3}
-  m_PrefabInstance: {fileID: 56630972}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &392554507 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 102324449337787962, guid: f3c16004afc81bb4eb7400867a172e65, type: 3}
@@ -804,12 +797,7 @@ MonoBehaviour:
     remainingScore: 20
   - color: 5
     remainingScore: 20
-  instruments:
-  - {fileID: 392554506}
-  - {fileID: 684658474}
-  - {fileID: 1716362522}
-  - {fileID: 110301152}
-  - {fileID: 246860964}
+  instruments: []
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1099,6 +1087,10 @@ PrefabInstance:
     - target: {fileID: 6615255958905866562, guid: af9c959e68c191e40a1daec47ab455e5, type: 3}
       propertyPath: m_Name
       value: RainbowInlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6615255958905866562, guid: af9c959e68c191e40a1daec47ab455e5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6615255958905866564, guid: af9c959e68c191e40a1daec47ab455e5, type: 3}
       propertyPath: stand
@@ -1709,11 +1701,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1624170391, guid: a2cd037cf4546ce4ba2dcd76f25fb265, type: 3}
   m_PrefabInstance: {fileID: 121013864}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &684658474 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6314619371207953244, guid: 35edd39bf7ddf8f43b3f1b79ffa14692, type: 3}
-  m_PrefabInstance: {fileID: 2066124592}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &684658475 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6314619371207953247, guid: 35edd39bf7ddf8f43b3f1b79ffa14692, type: 3}
@@ -2146,6 +2133,10 @@ PrefabInstance:
     - target: {fileID: 7682404599642934586, guid: bc9399fe315b97342be9cbb23da47611, type: 3}
       propertyPath: m_Name
       value: Soldering Iron
+      objectReference: {fileID: 0}
+    - target: {fileID: 7682404599642934586, guid: bc9399fe315b97342be9cbb23da47611, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7682404599642934590, guid: bc9399fe315b97342be9cbb23da47611, type: 3}
       propertyPath: m_Radius
@@ -2792,7 +2783,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1655218036
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2876,17 +2867,12 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 3
   m_TargetDisplay: 0
---- !u!1 &1716362522 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3122825608144848116, guid: a2cd037cf4546ce4ba2dcd76f25fb265, type: 3}
-  m_PrefabInstance: {fileID: 121013864}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1716362523 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -3058159014226474561, guid: a2cd037cf4546ce4ba2dcd76f25fb265, type: 3}
   m_PrefabInstance: {fileID: 121013864}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1716362522}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f46cd7bcad1e87549ad29ebed9f8ff17, type: 3}
@@ -3000,7 +2986,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -0.11999512, y: 0.13989258}
   m_SizeDelta: {x: 75.14, y: 57.72}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3369,6 +3355,10 @@ PrefabInstance:
     - target: {fileID: 6314619371207953244, guid: 35edd39bf7ddf8f43b3f1b79ffa14692, type: 3}
       propertyPath: m_Name
       value: Baker
+      objectReference: {fileID: 0}
+    - target: {fileID: 6314619371207953244, guid: 35edd39bf7ddf8f43b3f1b79ffa14692, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6314619371207953247, guid: 35edd39bf7ddf8f43b3f1b79ffa14692, type: 3}
       propertyPath: m_RootOrder
