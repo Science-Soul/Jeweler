@@ -55,7 +55,9 @@ public class Objectives : MonoBehaviour
     private void Awake()
     {
         level = FindAnyObjectByType<Level>();
-
+    }
+    private void Start()
+    {
         switch (level.Type)
         {
             case Level.LevelType.PieceColor:
@@ -87,11 +89,6 @@ public class Objectives : MonoBehaviour
 
             default: return;
         }
-
-    }
-    private void Start()
-    {
-
     }
 
     private void SetPieceColorObjectives(Dictionary<ColorPiece.ColorType, Sprite> spriteDict, PieceSprites[] spriteStructs)

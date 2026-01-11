@@ -2842,7 +2842,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1723169517}
-  - component: {fileID: 1723169520}
+  - component: {fileID: 1723169522}
   - component: {fileID: 1723169519}
   - component: {fileID: 1723169518}
   - component: {fileID: 1723169521}
@@ -2911,18 +2911,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonPrefab: {fileID: 8734426367129341459, guid: eca86dd5824768b499beed8783afe402, type: 3}
   gridParent: {fileID: 1723169517}
---- !u!114 &1723169520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1723169516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5589d9c03877a39498d8d9842b1f4204, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1723169521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2937,6 +2925,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
+--- !u!114 &1723169522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723169516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a6f79b40953be946a065604143dba18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1800677822
 GameObject:
   m_ObjectHideFlags: 0

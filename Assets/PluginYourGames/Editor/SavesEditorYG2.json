@@ -7,6 +7,7 @@
         false,
         false
     ],
-    "idSave": 23,
-    "highestUnlockedLevelIndex": 56
+    "idSave": 30,
+    "highestUnlockedStoryLevelIndex": 54,
+    "highestUnlockedExtraLevelIndexDelta": 3
 }

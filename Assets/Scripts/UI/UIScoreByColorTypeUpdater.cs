@@ -23,9 +23,9 @@ public class UIScoreByColorTypeUpdater : MonoBehaviour
         image.color = col;
         targetColorType = colorType;
         level = FindAnyObjectByType<Level>();
-        initialRequiredAmount = level.GetRemainingForColorType(targetColorType);
         scoreText = GetComponentInChildren<TextMeshProUGUI>();
         level.ScoreUpdate += HandleScoreUpdate;
+        initialRequiredAmount = level.GetRemainingForColorType(targetColorType);
         UpdateUIText(initialRequiredAmount);
     }
     

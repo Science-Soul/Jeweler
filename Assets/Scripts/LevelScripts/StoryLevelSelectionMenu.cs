@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using YG;
 
-public class LevelSelectionMenu : MonoBehaviour
+public class StoryLevelSelectionMenu : MonoBehaviour
 {
     private Button[] levelButtons;
     // Start is called before the first frame update
@@ -13,7 +13,7 @@ public class LevelSelectionMenu : MonoBehaviour
         levelButtons = gameObject.GetComponentsInChildren<Button>();
         for (int i = 0; i < levelButtons.Length; i++)
         {
-            if (i <= YG2.saves.highestUnlockedLevelIndex - 1) // build index 0 => main menu, поэтому надо отнять единицу
+            if (i <= YG2.saves.highestUnlockedStoryLevelIndex - 1) // build index 0 => main menu, поэтому надо отнять единицу
             {
                 levelButtons[i].interactable = true;
                 levelButtons[i].GetComponent<Image>().color = Color.white;
