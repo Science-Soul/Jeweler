@@ -27,7 +27,7 @@ public class SceneFinisher : MonoBehaviour
         int sceneIndex = SceneManager.GetActiveScene().buildIndex;
         if (sceneIndex == SceneManager.sceneCountInBuildSettings - 1)
         {
-            // TODO обработать последнюю сцену
+            SceneManager.LoadScene(0);
             Debug.Log("Ёто была последн€€ сцена!");
             yield break;
         }
