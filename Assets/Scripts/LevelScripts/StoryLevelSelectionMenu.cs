@@ -13,7 +13,7 @@ public class StoryLevelSelectionMenu : MonoBehaviour
         levelButtons = gameObject.GetComponentsInChildren<Button>();
         for (int i = 0; i < levelButtons.Length; i++)
         {
-            if (i <= YG2.saves.highestUnlockedStoryLevelIndex - 1) // build index 0 => main menu, поэтому надо отнять единицу
+            if (i <= YG2.saves.highestUnlockedLevelIndex - 1) // build index 0 => main menu, поэтому надо отнять единицу
             {
                 levelButtons[i].interactable = true;
                 levelButtons[i].GetComponent<Image>().color = Color.white;

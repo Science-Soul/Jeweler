@@ -34,11 +34,11 @@ public class SceneFinisher : MonoBehaviour
 
         AsyncOperation operation = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
         int FirstExtraLevelSceneNumber = SceneUtility.GetBuildIndexByScenePath("Assets/Scenes/ExtraLevels/_ORDERED/1.1_StartExtraLevels.unity");
-        if (sceneIndex >= YG2.saves.highestUnlockedStoryLevelIndex && sceneIndex < FirstExtraLevelSceneNumber - 1)
+        if (sceneIndex >= YG2.saves.highestUnlockedLevelIndex && sceneIndex < FirstExtraLevelSceneNumber - 1)
         {
-            YG2.saves.highestUnlockedStoryLevelIndex = sceneIndex + 1;
+            YG2.saves.highestUnlockedLevelIndex = sceneIndex + 1;
             YG2.SaveProgress();
-            YG2.SetLeaderboard("Leaderboard", YG2.saves.highestUnlockedStoryLevelIndex);
+            YG2.SetLeaderboard("Leaderboard", YG2.saves.highestUnlockedLevelIndex);
         }
         if (sceneIndex >= YG2.saves.highestUnlockedExtraLevelIndexDelta + FirstExtraLevelSceneNumber - 1)
         {
