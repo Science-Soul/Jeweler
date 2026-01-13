@@ -51,7 +51,7 @@ public class SceneFinisher : MonoBehaviour
         CanvasGroup endingCanvasGroup = sceneEnding.GetComponent<CanvasGroup>();
         endingCanvasGroup.alpha = 0;
         progressPanel.SetActive(true);
-        CanvasGroup progressBarCanvasGroup = sceneEnding.GetComponent<CanvasGroup>();
+        CanvasGroup progressBarCanvasGroup = progressPanel.GetComponent<CanvasGroup>();
         progressBarCanvasGroup.alpha = 0;
         while (!operation.isDone)
         {

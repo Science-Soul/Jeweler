@@ -1171,6 +1171,7 @@ GameObject:
   - component: {fileID: 7115841053984566007}
   - component: {fileID: 7115841053984566006}
   - component: {fileID: 7115841053984565994}
+  - component: {fileID: 1857627140711276315}
   m_Layer: 0
   m_Name: Start-End-Canvas
   m_TagString: Untagged
@@ -1293,6 +1294,18 @@ MonoBehaviour:
   progressPanel: {fileID: 7115841054892541585}
   progressBar: {fileID: 7115841053936972772}
   progressText: {fileID: 7115841054079746619}
+--- !u!114 &1857627140711276315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7115841053984566004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 170b4583820d64748b9cb9720a0a52ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7115841054079746617
 GameObject:
   m_ObjectHideFlags: 0
