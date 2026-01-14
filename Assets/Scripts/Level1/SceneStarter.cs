@@ -4,6 +4,7 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
+using YG;
 
 public class SceneStarter : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class SceneStarter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        YG2.InterstitialAdvShow();
         if (DebugManager.instance != null)
         {
             DebugManager.instance.enableRuntimeUI = false;
