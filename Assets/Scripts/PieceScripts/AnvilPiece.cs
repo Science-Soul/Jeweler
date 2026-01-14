@@ -18,6 +18,7 @@ public class AnvilPiece : MonoBehaviour
     [SerializeField] protected Sprite anvilSprite;
     [SerializeField] protected Sprite anvilActivatedSprite;
     [SerializeField] protected GameObject anvilOversaturatedFrame;
+    [SerializeField] protected GameObject anvilVFX;
 
     public bool isSelected = false;
     public bool isOversaturated = false;
@@ -101,6 +102,7 @@ public class AnvilPiece : MonoBehaviour
         {
             gameObject.tag = "AnvilActivated";
             spriteRend.sprite = anvilActivatedSprite;
+            anvilVFX.SetActive(true);
             spriteRend.DOColor(activeAnvilColor, 2f).SetEase(Ease.InOutBack);
             isActivated = true;
             if (GridRef.level.Type == Level.LevelType.ANVIL1)

@@ -8,6 +8,8 @@ public class ClearColorPiece : ClearablePiece
     private ColorPiece colorComponent;
     private ColorType color;
 
+    [SerializeField] GameObject RainbowVFX;
+
     public ColorType Color
     {
         get { return color; }
@@ -17,13 +19,6 @@ public class ClearColorPiece : ClearablePiece
             colorComponent.SetColor(value);
         }
     }
-    /*private ColorPiece.ColorType color;
-
-    public ColorPiece.ColorType Color
-    {
-        get { return color; }
-        set { ColorPiece.SetColor(value); }
-    }*/
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +34,8 @@ public class ClearColorPiece : ClearablePiece
 
     public override void Clear()
     {
+        RainbowVFX.SetActive(true);
+        RainbowVFX.transform.parent = null;
         base.Clear();
 
         piece.GridRef.ClearColor(color);
