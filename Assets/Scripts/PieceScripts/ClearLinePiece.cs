@@ -27,12 +27,6 @@ public class ClearLinePiece : ClearablePiece
         if (isRow)
         {
             piece.GridRef.ClearRow(piece.Y);
-
-            /*float offsetX = gameObject.GetComponent<BoxCollider2D>().size.x / 2f;
-            float offsetY = -gameObject.GetComponent<BoxCollider2D>().size.y / 2f;
-            Vector3 offset = new Vector3((float)offsetX, (float)offsetY, 0); // Чтобы эффект появился не в углу, а в центре плитки
-            Vector3 newPiecePosition = (Vector3)piece.GridRef.GetWorldPosition(piece.X, piece.Y);
-            Instantiate(RowVFX, newPiecePosition + offset, transform.rotation);*/
         }
         else
         {

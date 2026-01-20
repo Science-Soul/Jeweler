@@ -1482,7 +1482,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0412\u0435\u0440\u0441\u0438\u044F 1.22 \n\u043E\u0442 13.01.2026"
+  m_text: "\u0412\u0435\u0440\u0441\u0438\u044F 1.24 \n\u043E\u0442 19.01.2026"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2857bc538dc7e3043b67da9684fb048f, type: 2}
   m_sharedMaterial: {fileID: 6375780895234549965, guid: 2857bc538dc7e3043b67da9684fb048f, type: 2}

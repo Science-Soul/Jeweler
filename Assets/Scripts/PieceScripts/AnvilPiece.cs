@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using static ColorPiece;
@@ -19,6 +20,7 @@ public class AnvilPiece : MonoBehaviour
     [SerializeField] protected Sprite anvilActivatedSprite;
     [SerializeField] protected GameObject anvilOversaturatedFrame;
     [SerializeField] protected GameObject anvilVFX;
+    [SerializeField] protected GameObject anvilStars;
 
     public bool isSelected = false;
     public bool isOversaturated = false;
@@ -102,6 +104,7 @@ public class AnvilPiece : MonoBehaviour
         {
             gameObject.tag = "AnvilActivated";
             spriteRend.sprite = anvilActivatedSprite;
+            anvilStars.SetActive(true);
             anvilVFX.SetActive(true);
             spriteRend.DOColor(activeAnvilColor, 2f).SetEase(Ease.InOutBack);
             isActivated = true;
@@ -117,6 +120,7 @@ public class AnvilPiece : MonoBehaviour
         if (isActivated && !isOversaturated)
         {
             gameObject.tag = "Oversaturated";
+            anvilStars.SetActive(false);
             anvilOversaturatedFrame.SetActive(true);
             isOversaturated = true;
             if (GridRef.level.Type == Level.LevelType.ANVIL2)

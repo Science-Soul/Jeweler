@@ -401,7 +401,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3869862936204189847, guid: fb4ab4608e484f041a5719035290cee2, type: 3}
       propertyPath: stopAction
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3869862936204189847, guid: fb4ab4608e484f041a5719035290cee2, type: 3}
       propertyPath: autoRandomSeed

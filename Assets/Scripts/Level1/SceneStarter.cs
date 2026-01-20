@@ -14,7 +14,7 @@ public class SceneStarter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        YG2.InterstitialAdvShow();
+        //YG2.InterstitialAdvShow();
         if (DebugManager.instance != null)
         {
             DebugManager.instance.enableRuntimeUI = false;

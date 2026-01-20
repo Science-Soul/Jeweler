@@ -12,6 +12,7 @@ public class UIScoreByColorTypeUpdater : MonoBehaviour
     private Level level;
 
     [SerializeField] Image image;
+    [SerializeField] Sprite anvil1FrameSprite;
 
     private void Start()
     {
@@ -27,6 +28,24 @@ public class UIScoreByColorTypeUpdater : MonoBehaviour
         level.ScoreUpdate += HandleScoreUpdate;
         initialRequiredAmount = level.GetRemainingForColorType(targetColorType);
         UpdateUIText(initialRequiredAmount);
+    }
+
+    public void AddAnvilFrame()
+    {
+        CreateEmptyChildWithImage(gameObject.transform);
+
+        void CreateEmptyChildWithImage(Transform parent)
+        {
+            GameObject empty = new GameObject("anvil1Image");
+            empty.transform.SetParent(parent, false);
+            Image newImageComponent = empty.AddComponent<Image>();
+            newImageComponent.sprite = anvil1FrameSprite;
+            RectTransform rectTransform = empty.GetComponent<RectTransform>();
+            rectTransform.anchorMin = Vector2.up;
+            rectTransform.anchorMax = Vector2.up;
+            rectTransform.localPosition = new Vector2(-88, 0);
+            rectTransform.sizeDelta = new Vector2(130, 130);
+        }
     }
     
     private void HandleScoreUpdate(ColorPiece.ColorType colorToUpdate, int newTotalScore) 

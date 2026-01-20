@@ -18,7 +18,7 @@ public class SceneFinisher : MonoBehaviour
 
     public void LoadNextScene()
     {
-        //YG2.InterstitialAdvShow();
+        YG2.InterstitialAdvShow();
         StartCoroutine(LoadAsyncScene());
     }
 

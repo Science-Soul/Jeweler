@@ -169,6 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetColorType: 0
   image: {fileID: 1615470604858849044}
+  anvil1FrameSprite: {fileID: 21300000, guid: a715ad2dd2ee1fe45bc30d18373af9cb, type: 3}
 --- !u!1 &5152044030967542153
 GameObject:
   m_ObjectHideFlags: 0

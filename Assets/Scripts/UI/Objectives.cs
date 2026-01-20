@@ -135,6 +135,7 @@ public class Objectives : MonoBehaviour
             if (obj != null && colorDict.ContainsKey(objective.color))
             {
                 obj.Init(objective.color, anvil1Sprite, colorDict[objective.color]);
+                obj.AddAnvilFrame();
             }
         }
     }
@@ -144,6 +145,7 @@ public class Objectives : MonoBehaviour
         SetAnvil1Objectives(colorDict, colorStructs);
 
         foreach (UIScoreByColorTypeUpdater obj in gameObject.GetComponentsInChildren<UIScoreByColorTypeUpdater>()) {
+            obj.gameObject.transform.Find("anvil1Image").gameObject.SetActive(false);
             CreateEmptyChildWithImage(obj.gameObject.transform);
         }
 

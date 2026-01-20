@@ -34,10 +34,21 @@ public class ClearColorPiece : ClearablePiece
 
     public override void Clear()
     {
-        RainbowVFX.SetActive(true);
-        RainbowVFX.transform.parent = null;
         base.Clear();
-
         piece.GridRef.ClearColor(color);
+
+        ActivateVFX();
+    }
+
+    void ActivateVFX()
+    {
+        RainbowVFX.SetActive(true);
+
+        float offsetX = gameObject.GetComponent<BoxCollider2D>().size.x / 2f;
+        float offsetY = -gameObject.GetComponent<BoxCollider2D>().size.y / 2f;
+        Vector3 offset = new Vector3((float)offsetX, (float)offsetY, 0); // Чтобы эффект появился не в углу, а в центре плитки
+        Vector3 newPiecePosition = (Vector3)piece.GridRef.GetWorldPosition(piece.X, piece.Y);
+        RainbowVFX.transform.position = newPiecePosition;
+        RainbowVFX.transform.parent = null;
     }
 }
