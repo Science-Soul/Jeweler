@@ -179,6 +179,7 @@ public class Objectives : MonoBehaviour
 
         foreach (UIScoreByColorTypeUpdater obj in gameObject.GetComponentsInChildren<UIScoreByColorTypeUpdater>())
         {
+            obj.gameObject.transform.Find("anvil1Image").gameObject.SetActive(false);
             obj.GetComponentInChildren<Image>().rectTransform.localScale = Vector2.one;
             CreateEmptyChildWithImage(obj.gameObject.transform, obj.targetColorType);
         }

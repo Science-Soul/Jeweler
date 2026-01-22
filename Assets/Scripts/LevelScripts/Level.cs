@@ -10,6 +10,7 @@ public class Level : MonoBehaviour
     public GameObject gameOver;
     public const int MAX_TOTAL_COLLECTED_PIECES = Instrument.BASE_CHARGE * 5;
     [HideInInspector] public int currentTotalPiecesCollected;
+    [SerializeField] int initialInstrumentCharge;
     public enum LevelType
     {
         PieceColor,
@@ -79,7 +80,23 @@ public class Level : MonoBehaviour
     public virtual void Start()
     {
         gameOver.SetActive(false);
-        currentTotalPiecesCollected = 0;
+        currentTotalPiecesCollected = initialInstrumentCharge;
+        hud.SetInstrumentBar();
+        CheckAllInstrumentsCharge();
+    }
+
+    public void CheckAllInstrumentsCharge()
+    {
+        foreach (GameObject go in instruments)
+        {
+            if (currentTotalPiecesCollected < go.GetComponent<Instrument>().INSTRUMENT_CHARGE)
+            {
+                go.SetActive(false);
+            }
+            else {
+                go.SetActive(true);
+            }
+        }
     }
 
     protected virtual void OnScoreUpdate<T>(T type, int score)

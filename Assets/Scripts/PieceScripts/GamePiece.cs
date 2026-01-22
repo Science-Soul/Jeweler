@@ -99,7 +99,7 @@ public class GamePiece : MonoBehaviour  //”правление плиткой
     {
         grid.EnterPiece(this);
 
-        if (!grid.isBusy)
+        if (!grid.isBusy && !Application.isMobilePlatform)
         {
             outlineCrystal.SetActive(true);
             outlineCrystal.transform.position = this.GetComponent<BoxCollider2D>().bounds.center;

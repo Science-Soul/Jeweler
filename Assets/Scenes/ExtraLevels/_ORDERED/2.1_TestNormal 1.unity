@@ -1303,6 +1303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOver: {fileID: 1215196428}
   currentTotalPiecesCollected: 0
+  initialInstrumentCharge: 90
   grid: {fileID: 1855665324}
   hud: {fileID: 2258036827773899975}
   type: 0

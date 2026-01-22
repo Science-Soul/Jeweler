@@ -1610,22 +1610,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOver: {fileID: 464528517}
   currentTotalPiecesCollected: 0
+  initialInstrumentCharge: 0
   grid: {fileID: 1260698029}
   hud: {fileID: 5135346660645137617}
   type: 0
   remainingScores:
   - color: 0
-    remainingScore: 100
+    remainingScore: 30
   - color: 1
-    remainingScore: 100
+    remainingScore: 30
   - color: 2
-    remainingScore: 100
+    remainingScore: 30
   - color: 3
-    remainingScore: 100
+    remainingScore: 30
   - color: 4
-    remainingScore: 100
+    remainingScore: 30
   - color: 5
-    remainingScore: 100
+    remainingScore: 30
   instruments: []
 --- !u!1 &876320117
 GameObject:

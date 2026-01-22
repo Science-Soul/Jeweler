@@ -2015,12 +2015,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOver: {fileID: 464528517}
   currentTotalPiecesCollected: 0
+  initialInstrumentCharge: 0
   grid: {fileID: 1260698029}
   hud: {fileID: 5135346660645137617}
   type: 0
   remainingScores:
   - color: 4
-    remainingScore: 50
+    remainingScore: 25
   instruments: []
 --- !u!1 &876320117
 GameObject:
