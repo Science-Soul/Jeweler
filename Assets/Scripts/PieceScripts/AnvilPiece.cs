@@ -1,7 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using static ColorPiece;
@@ -138,6 +138,8 @@ public class AnvilPiece : MonoBehaviour
             spriteRend.DOColor(lockedAnvilColor, 1f).SetEase(Ease.OutQuad);
             isActivated = true;
             isLocked = true;
+
+            InvokeOnAnvilLocked();
         }
     }
 
@@ -150,5 +152,11 @@ public class AnvilPiece : MonoBehaviour
             isLocked = false;
             isActivated = false;
         }
+    }
+
+    public event Action OnAnvilLocked;
+    public void InvokeOnAnvilLocked()
+    {
+        OnAnvilLocked?.Invoke();
     }
 }

@@ -89,6 +89,10 @@ public class Grid : MonoBehaviour
         get { return isFilling; }
     }
 
+    private void OnDisable()
+    {
+        transform.DOKill();
+    }
     void Awake()
     {
         DOTween.Init();
@@ -211,7 +215,10 @@ public class Grid : MonoBehaviour
 
             shakePiecesSequence.OnComplete(() =>
             {
-                StartCoroutine(Fill());
+                if (gameObject.activeInHierarchy)
+                {
+                    StartCoroutine(Fill());
+                }
                 isBusy = false;
             });
 

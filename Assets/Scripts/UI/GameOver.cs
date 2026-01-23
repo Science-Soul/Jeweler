@@ -10,7 +10,7 @@ public class GameOver : MonoBehaviour
     {
         CanvasGroup canvasGroup = gameObject.GetComponent<CanvasGroup>();
         canvasGroup.alpha = 0;
-        canvasGroup.DOFade(1, 1.5f);
+        canvasGroup.DOFade(1, 1.5f).SetDelay(1.5f).SetUpdate(true);
 
     }
     public void SetGameLayersInvisible()
