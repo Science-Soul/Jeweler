@@ -31,7 +31,7 @@ public class Grid : MonoBehaviour
     [System.Serializable]
     public struct PiecePosition
     {
-        public PieceType type;
+        public ColorType color;
         public int x;
         public int y;
     };
@@ -133,7 +133,8 @@ public class Grid : MonoBehaviour
             if (initialPieces[i].x >= 0 && initialPieces[i].x < xDim
                 && initialPieces[i].y >= 0 && initialPieces[i].y < yDim)
             {
-                SpawnNewPiece(initialPieces[i].x, initialPieces[i].y, initialPieces[i].type);
+                SpawnNewPiece(initialPieces[i].x, initialPieces[i].y, PieceType.NORMAL).ColorComponent.Color = initialPieces[i].color;
+                
             }
         }
 
@@ -900,9 +901,13 @@ public class Grid : MonoBehaviour
 
     public bool IsMatchesAvailable()
     {
-        // горизонталь по всем строкам
+        
         // Я ПОМЕНЯЛ МЕСТАМИ Х И У!!! 20.11.2025, поэтому в комментах строки и столбцы надо поменять местами
-        // лево право
+        //
+        // 0*0
+        // 0*0
+        // 000
+        // 0*0
         for (int x = 0; x < xDim; x++) // строка x = const
         {
             for (int y = 0; y < yDim - 3; y++)
@@ -924,7 +929,9 @@ public class Grid : MonoBehaviour
             }
         }
 
-        // низ-лево низ-право
+        // 0*0 00*
+        // 0*0 0*0
+        // 00* 0*0
         for (int x = 0; x < xDim - 1; x++)
         {
             for (int y = 0; y < yDim - 2; y++)
@@ -946,7 +953,9 @@ public class Grid : MonoBehaviour
             }
         }
 
-        // верх-лево верх-право
+        // *00 0*0
+        // 0*0 0*0
+        // 0*0 *00
         for (int x = xDim - 1; x >= 1; x--)
         {
             for (int y = 0; y < yDim - 2; y++)
@@ -968,7 +977,9 @@ public class Grid : MonoBehaviour
             }
         }
 
-        // центр низ
+        // 0*0
+        // 00*
+        // 0*0
         for (int x = 0; x < xDim - 1; x++)
         {
             for (int y = 0; y < yDim - 2; y++)
@@ -981,7 +992,9 @@ public class Grid : MonoBehaviour
             }
         }
 
-        // центр верх
+        // 0*0
+        // *00
+        // 0*0
         for (int x = xDim - 1; x >= 1; x--)
         {
             for (int y = 0; y < yDim - 2; y++)
@@ -994,10 +1007,12 @@ public class Grid : MonoBehaviour
             }
         }
 
-        // вертикаль по всем столбцам
+        
 
-        // верх низ
-        for (int y = 0; y < yDim; y++) // каждый столбец х = const
+        // **0*
+        // 000
+        // 000
+        for (int y = 0; y < yDim; y++) // строка у = const
         {
             for (int x = 0; x < xDim - 3; x++)
             {
@@ -1018,7 +1033,9 @@ public class Grid : MonoBehaviour
             }
         }
 
-        // право-низ право-верх
+        // **0
+        // 00*
+        // 000
         for (int y = 0; y < yDim - 1; y++)
         {
             for (int x = 0; x < xDim - 2; x++)
@@ -1030,6 +1047,9 @@ public class Grid : MonoBehaviour
                 }
             }
 
+            // 0**
+            // *00
+            // 00
             for (int x = xDim - 1; x >= 2; x--)
             {
                 if (pieces[x, y].ColorComponent.Color == pieces[x - 1, y].ColorComponent.Color
@@ -1040,9 +1060,12 @@ public class Grid : MonoBehaviour
             }
         }
 
-        // лево-низ лево-верх
+        
         for (int y = yDim - 1; y >= 1; y--)
         {
+            // 000
+            // 00*
+            // **0
             for (int x = 0; x < xDim - 2; x++)
             {
                 if (pieces[x, y].ColorComponent.Color == pieces[x + 1, y].ColorComponent.Color
@@ -1052,6 +1075,9 @@ public class Grid : MonoBehaviour
                 }
             }
 
+            // 000
+            // *00
+            // 0**
             for (int x = xDim - 1; x >= 2; x--)
             {
                 if (pieces[x, y].ColorComponent.Color == pieces[x - 1, y].ColorComponent.Color
@@ -1062,10 +1088,12 @@ public class Grid : MonoBehaviour
             }
         }
 
-        // центр право
-        for (int y = 0; y < yDim - 2; y++)
+        // 000
+        // *0*
+        // 0*0
+        for (int y = 0; y < yDim - 1; y++)
         {
-            for (int x = 0; x < xDim - 3; x++)
+            for (int x = 0; x < xDim - 2; x++)
             {
                 if (pieces[x, y].ColorComponent.Color == pieces[x + 2, y].ColorComponent.Color
                  && pieces[x, y].ColorComponent.Color == pieces[x + 1, y + 1].ColorComponent.Color)
@@ -1074,10 +1102,13 @@ public class Grid : MonoBehaviour
                 }
             }
         }
-        // центр лево
+        
+        // 000
+        // 0*0
+        // *0*
         for (int y = yDim - 1; y >= 1; y--)
         {
-            for (int x = 0; x < xDim - 3; x++)
+            for (int x = 0; x < xDim - 2; x++)
             {
                 if (pieces[x, y].ColorComponent.Color == pieces[x + 2, y].ColorComponent.Color
                  && pieces[x, y].ColorComponent.Color == pieces[x + 1, y - 1].ColorComponent.Color)
