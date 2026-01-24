@@ -27,7 +27,15 @@ public class ExtraLevelsGridMenu : MonoBehaviour
             TextMeshProUGUI buttonText = newButton.GetComponentInChildren<TextMeshProUGUI>();
             if (buttonText != null)
             {
+                if (i == startExtraLevelsSceneIndex)
+                {
+                    buttonText.text = "Обучение";
+                    buttonText.fontSize = 70;
+                }
+                else
+                {
                     buttonText.text = (i - startExtraLevelsSceneIndex + 2).ToString();
+                }
             }
 
             int buttonIndex = i;

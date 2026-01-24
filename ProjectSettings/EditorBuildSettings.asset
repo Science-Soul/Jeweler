@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Story/level1.unity
     guid: a02e97910e13307439bb3c17f35061b4
   - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: cc493b0c9c744ea4584d153e527e14de
+  - enabled: 1
     path: Assets/Scenes/Story/level2.unity
     guid: 268dbec7bf31b1b4c8bd230fb6f19c71
   - enabled: 1
@@ -173,6 +176,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ExtraLevels/_ORDERED/1.1_StartExtraLevels.unity
     guid: 95536c9e086c7a646b0ae1c18176ead4
+  - enabled: 1
+    path: Assets/Scenes/TutorialForExtras.unity
+    guid: 3385e004335fca84cb74fc796426fecd
   - enabled: 1
     path: Assets/Scenes/ExtraLevels/_ORDERED/1.21_Anvil1_Extra 1.unity
     guid: 9ef9228aa3f51ec4a9a49f52bd0c1a2b

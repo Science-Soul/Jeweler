@@ -13,11 +13,15 @@ public class LevelHints : MonoBehaviour
     void Start()
     {
         // Выдать подсказки
-        tipsCanvas.SetActive(true);
-        gameOverMenu.SetGameLayersInvisible();
-        CanvasGroup canvasGroup = tipsCanvas.GetComponent<CanvasGroup>();
-        canvasGroup.alpha = 0;
-        canvasGroup.DOFade(1, 1.8f);
+        if (tipsCanvas != null)
+        {
+            tipsCanvas.SetActive(true);
+
+            gameOverMenu.SetGameLayersInvisible();
+            CanvasGroup canvasGroup = tipsCanvas.GetComponent<CanvasGroup>();
+            canvasGroup.alpha = 0;
+            canvasGroup.DOFade(1, 1.8f);
+        }
     }
 
     public void PauseGame()

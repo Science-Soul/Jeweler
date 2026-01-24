@@ -30,6 +30,11 @@ public class LevelGridMenu : MonoBehaviour
                     buttonText.text = "Пролог";
                     buttonText.fontSize = 70;
                 }
+                else if (i == 2)
+                {
+                    buttonText.text = "Обучение";
+                    buttonText.fontSize = 70;
+                }
                 else
                 {
                     buttonText.text = i.ToString();

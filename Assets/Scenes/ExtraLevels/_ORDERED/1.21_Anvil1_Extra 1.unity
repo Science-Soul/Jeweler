@@ -1515,7 +1515,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!225 &367416098
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1578,7 +1578,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -6855,7 +6855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 522830179cc2af44ea416568041407ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tipsCanvas: {fileID: 367416097}
+  tipsCanvas: {fileID: 0}
   gameOverMenu: {fileID: 464528519}
 --- !u!4 &1105182439
 Transform:
@@ -8921,7 +8921,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1

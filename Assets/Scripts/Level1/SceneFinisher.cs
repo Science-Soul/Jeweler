@@ -47,12 +47,15 @@ public class SceneFinisher : MonoBehaviour
         }
         operation.allowSceneActivation = false;
         bool isFadeStarted = false;
+
         sceneEnding.SetActive(true);
         CanvasGroup endingCanvasGroup = sceneEnding.GetComponent<CanvasGroup>();
-        endingCanvasGroup.alpha = 0;
         progressPanel.SetActive(true);
         CanvasGroup progressBarCanvasGroup = progressPanel.GetComponent<CanvasGroup>();
+
+        endingCanvasGroup.alpha = 0;
         progressBarCanvasGroup.alpha = 0;
+
         while (!operation.isDone)
         {
             // Прогресс загрузки от 0 до 0.9 (до фактической активации сцены)
@@ -71,8 +74,12 @@ public class SceneFinisher : MonoBehaviour
             if (operation.progress >= 0.9f && !isFadeStarted)
             {
                 isFadeStarted = true;
-                progressBarCanvasGroup.DOFade(1, 2f);
-                endingCanvasGroup.DOFade(1, 2f).OnComplete(() => operation.allowSceneActivation = true);
+                progressBarCanvasGroup.DOFade(1, 2f).SetUpdate(true);
+                endingCanvasGroup.DOFade(1, 2f).SetUpdate(true).OnComplete(() =>
+                {
+                    Debug.Log("Анимация завершена");
+                    operation.allowSceneActivation = true;
+                });
             }
             // Ждем следующего кадра
             yield return null;
