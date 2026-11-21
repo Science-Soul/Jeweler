@@ -7,7 +7,7 @@ public class InstrumentPanel : MonoBehaviour
 {
     public GameObject[] instrumentsGO;
 
-    private void Start()
+    private void Awake()
     {
         var instrumentsList = instrumentsGO.Select(x => x.GetComponent<Instrument>()).ToArray();
         GameEvents.SetupLevelInstruments(instrumentsList);

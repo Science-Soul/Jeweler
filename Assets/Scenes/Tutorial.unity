@@ -3066,6 +3066,7 @@ MonoBehaviour:
   remainingScores:
   - color: 0
     remainingScore: 1
+  numberOfInstrumentsAwailable: 1
   instruments:
   - {fileID: 1279094905}
   - {fileID: 1864507011}
@@ -6251,7 +6252,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!114 &519420030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9099,6 +9100,7 @@ MonoBehaviour:
   remainingScores:
   - color: 4
     remainingScore: 1
+  numberOfInstrumentsAwailable: 1
   instruments:
   - {fileID: 782221429}
 --- !u!1001 &820035986
@@ -10157,6 +10159,7 @@ MonoBehaviour:
     remainingScore: 1
   - color: 0
     remainingScore: 1
+  numberOfInstrumentsAwailable: 1
   instruments:
   - {fileID: 1785538440}
 --- !u!4 &881110383
@@ -16968,6 +16971,7 @@ MonoBehaviour:
   remainingScores:
   - color: 4
     remainingScore: 1
+  numberOfInstrumentsAwailable: 1
   instruments:
   - {fileID: 62937603}
   - {fileID: 1436936678}
@@ -25349,6 +25353,7 @@ MonoBehaviour:
   remainingScores:
   - color: 4
     remainingScore: 1
+  numberOfInstrumentsAwailable: 1
   instruments:
   - {fileID: 222871053}
 --- !u!4 &2101210486
