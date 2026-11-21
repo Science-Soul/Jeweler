@@ -1,4 +1,4 @@
-using System;
+п»їusing System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
@@ -222,13 +222,13 @@ public class Instrument : MonoBehaviour
 
         if (hit.collider != null && hit.collider.CompareTag(targetTag))
         {
-            // Попадание гарантировано произошло на нужном слое "Interactive"
-            Debug.Log($"2D: Попали в объект на слое {targetTag}: " + hit.collider.gameObject.name);
+            // РџРѕРїР°РґР°РЅРёРµ РіР°СЂР°РЅС‚РёСЂРѕРІР°РЅРѕ РїСЂРѕРёР·РѕС€Р»Рѕ РЅР° РЅСѓР¶РЅРѕРј СЃР»РѕРµ "Interactive"
+            Debug.Log($"2D: РџРѕРїР°Р»Рё РІ РѕР±СЉРµРєС‚ РЅР° СЃР»РѕРµ {targetTag}: " + hit.collider.gameObject.name);
             return hit.collider.gameObject;
         }
         else
         {
-            Debug.Log($"2D: Либо промах, либо объект не на слое {targetTag}.");
+            Debug.Log($"2D: Р›РёР±Рѕ РїСЂРѕРјР°С…, Р»РёР±Рѕ РѕР±СЉРµРєС‚ РЅРµ РЅР° СЃР»РѕРµ {targetTag}.");
             return null;
         }
     }

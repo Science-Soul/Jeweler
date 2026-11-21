@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -49,6 +49,12 @@ public class Level : MonoBehaviour
         public int remainingScore;
     };
     public RemainingScores[] remainingScores;
+
+    private const int NUMBER_OF_INSTRUMENTS_TOTAL = 5;
+    [SerializeField]
+    [Range(0, NUMBER_OF_INSTRUMENTS_TOTAL)] int numberOfInstrumentsAwailable = 1;
+
+    [HideInInspector]
     public GameObject[] instruments;
 
     public event Action<ColorPiece.ColorType, int> ScoreUpdate;
@@ -59,10 +65,7 @@ public class Level : MonoBehaviour
 
     protected void Awake()
     {
-        foreach (GameObject go in instruments)
-        {
-            go.SetActive(false);
-        }
+        GameEvents.OnSetupInstruments += GameEvents_OnSetupInstruments; // Передали массив инструментов через ивент
 
         remainingScoresDict = new();
         foreach (RemainingScores s in remainingScores)
@@ -79,10 +82,21 @@ public class Level : MonoBehaviour
     // Start is called before the first frame update
     public virtual void Start()
     {
+        foreach (GameObject go in instruments)
+        {
+                go.SetActive(false);
+        }
+
         gameOver.SetActive(false);
         currentTotalPiecesCollected = initialInstrumentCharge;
         hud.SetInstrumentBar();
         CheckAllInstrumentsCharge();
+    }
+
+    private void GameEvents_OnSetupInstruments(Instrument[] instruments)
+    {
+        var instrumentsGO = instruments.Select(x => x.gameObject).Take(numberOfInstrumentsAwailable).ToArray();
+        this.instruments = instrumentsGO;
     }
 
     public void CheckAllInstrumentsCharge()
@@ -93,7 +107,8 @@ public class Level : MonoBehaviour
             {
                 go.SetActive(false);
             }
-            else {
+            else
+            {
                 go.SetActive(true);
             }
         }
